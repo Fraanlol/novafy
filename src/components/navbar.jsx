@@ -1,7 +1,7 @@
 'use client'
 import { Player } from '@lottiefiles/react-lottie-player';
-import AionData from '../../public/icons8-menu.json'
-import { useRef } from 'reaczt';
+import AionData from '../assets/icons8-menu.json'
+import { useRef } from 'react';
 
 import SvgIcon from '@mui/material/SvgIcon';
 export default function Navbar() {
@@ -20,7 +20,7 @@ export default function Navbar() {
        <header className="block z-10 mb-52 header">
         <div className="navWrapper w-full flex flex-row justify-around items-center items-center p-5">
           <div className="logoContainer flex-1 text-3xl lg:text-2xl font-bold text-center flex flex-row justify-start justify-center items-center">
-            <p className='cursor-pointer'>Novafy</p>
+            <p className='cursor-pointer'>NOVAFY</p>
           </div>
           <nav className="flex-1 text-md font-light ml-1 ml-12 desktop-nav">
             <ul className="flex flex-row justify-center">
