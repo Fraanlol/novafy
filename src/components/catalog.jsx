@@ -39,9 +39,9 @@ export default function Catalog() {
             </div>
             <section className="w-full section-shop py-20">
             <div className="flex justify-center m-auto flex-wrap items-center max-w-7xl flex-auto">
-                {data.map(data => {
+                {data.map((data,i) => {
                     return(
-                        <div className="m-4">
+                        <div className="m-4" key={i}>
                             <img className="catalog-pic" src={data.img} alt="" />
                             <p className="my-4 text-xl">{data.name}</p>
                             <p className="text-xl">{data.price}</p>
