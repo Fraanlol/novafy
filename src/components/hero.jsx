@@ -3,7 +3,7 @@ export default function Hero() {
        <section className="mb-56">
         <div className="flex flex-row items-center justify-center section-hero">
             <div className="left-container">
-                <img className="left-img" src="../../public/hero-2.jpg" alt="" />
+                <img className="left-img" src="/hero-2.jpg" alt="" />
             </div>
             <div className="hero-mainContent">
                 <div className="font-bold text-center leading-snug">
@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
             </div>
             <div>
-                <img className="right-img" src="../../public/hero-1.png" alt="" />
+                <img className="right-img" src="/hero-1.png" alt="" />
             </div>
         </div>
        </section>

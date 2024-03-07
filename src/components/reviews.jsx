@@ -11,12 +11,12 @@ export default function Reviews() {
                     Novafy me ha ayudado a potenciar mis ventas en Amazon. Sus estrategias de posicionamiento son efectivas y fáciles de implementar.
                     </p>
                 </div>
-                <img className="review-screen" src="../../public/reviews-1.jpg" alt="" />
+                <img className="review-screen" src="/reviews-1.jpg" alt="" />
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-row mb-21 review">
-                <img className="review-screen" src="../../public/reviews-2.jpg" alt="" />
+                <img className="review-screen" src="/reviews-2.jpg" alt="" />
                 <div className="max-w-2xl mt-20 ml-20 review-copy">
                     <h4 className="mb-4">
                         Testimonios

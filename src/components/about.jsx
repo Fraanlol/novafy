@@ -3,7 +3,7 @@ export default function About() {
        <section className="mb-40 section-about">
         <div className="flex flex-row items-center justify-center about-flexible">
            <div className="mr-28 about-img-container">
-            <img className="about-img" src="../../public/about-1.jpg" alt="" />
+            <img className="about-img" src="/about-1.jpg" alt="" />
            </div>
            <div>
             <div className="max-w-md about-container">
