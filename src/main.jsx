@@ -6,12 +6,20 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
+import Shop from "./routes/shop";
+import Contact from "./routes/contact";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+  },{
+    path: "/shop",
+    element: <Shop />,
+  },{
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 

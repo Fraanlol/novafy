@@ -2,9 +2,11 @@
 import { Player } from '@lottiefiles/react-lottie-player';
 import AionData from '../assets/icons8-menu.json'
 import { useRef } from 'react';
+import { NavLink, Link } from "react-router-dom";
 
 import SvgIcon from '@mui/material/SvgIcon';
-export default function Navbar() {
+export default function Navbar(pep) {
+  console.log(pep)
     const playerRef = useRef(null);
     function addEvent(){
       document.getElementById('lottie').addEventListener('click', e => {
@@ -24,9 +26,9 @@ export default function Navbar() {
           </div>
           <nav className="flex-1 text-md font-light ml-1 ml-12 desktop-nav">
             <ul className="flex flex-row justify-center">
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><a href="#">Inicio</a></li>
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><a href="#">Tienda</a></li>
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><a href="#">Contacto</a></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/#">Inicio</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/shop">Tienda</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/contact">Contacto</NavLink></li>
             </ul>
           </nav>
           <div className="self-start flex-1 text-xl font-thin hidden mobile-nav flex justify-end">
@@ -43,9 +45,9 @@ export default function Navbar() {
           }} src={AionData} ref={playerRef}  style={{ height: '45px', width: '45px' }} className='z-10 relative'>
           </Player>
             <ul id='bgmenu' className="flex text-3xl font-medium flex-col absolute top-0 right-0 bg-navbur bg-opacity-100 pt-32 pl-10 md:pl-20 w-full h-100 justify-start items-start">
-              <li className='py-6 hover:border-b-2 border-yellow-600 cursor-pointer'>Inicio</li>
-              <li className='py-6 hover:border-b-2 border-yellow-600 cursor-pointer'><a href="#">Tienda</a></li>
-              <li className='py-6 hover:border-b-2 border-yellow-600 cursor-pointer'><a href="#">Contacto</a></li>
+              <li className='py-6 cursor-pointer'><NavLink to="/#">Inicio</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink to="/shop">Tienda</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink to="/contact">Contacto</NavLink></li>
             </ul>
           </div>
           <div className="contactContainer grow text-md text-center w-min flex justify-center nav-cta">

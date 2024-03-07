@@ -12,11 +12,11 @@ export default function Footer() {
                 </div>
                 <div className=" mx-24">
                     <p className="text-2xl font-bold">Contactanos</p>
-                    <p>email@email.com</p>
-                    <p>(123)123-67899</p>
+                    <p>rodmaucompany@gmail.com</p>
                 </div>
                 <div>
                     <p className="text-2xl font-bold">Redes</p>
+                    <p>Proximamente</p>
                 </div>
             </div>
        </section>
