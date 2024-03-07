@@ -5,8 +5,7 @@ import { useRef } from 'react';
 import { NavLink, Link } from "react-router-dom";
 
 import SvgIcon from '@mui/material/SvgIcon';
-export default function Navbar(pep) {
-  console.log(pep)
+export default function Navbar() {
     const playerRef = useRef(null);
     function addEvent(){
       document.getElementById('lottie').addEventListener('click', e => {

@@ -211,6 +211,12 @@ img{
   }
 }
 
+@media only screen and (max-width:600px){
+  iframe{
+    width: 320px;
+  }
+}
+
 @media only screen and (max-width:500px){
   h1{
     font-size: 3rem;
@@ -273,6 +279,10 @@ img{
   .footer{
     max-width: 320px;
   }
+
+  .copy-shop{
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width:340px){
@@ -285,4 +295,13 @@ img{
  .large-hide{
   display: none;
  }
+}
+
+.catalog-pic{
+  width: 392px;
+  height: 350px;
+}
+
+.section-shop{
+  background-color: var(--color-3);
 }

@@ -1,16 +1,12 @@
 'use client'
 import Navbar from '../components/navbar';
-import Hero from '../components/hero'
-import About from '../components/about'
-import Services from '../components/services'
-import Reviews from '../components/reviews'
-import Info from '../components/info'
+import Catalog from '../components/catalog'
 import Footer from '../components/footer'
-export default function Root() {
+export default function Shop() {
     return (
       <>
-         <Navbar location="shop"/>
-  
+         <Navbar/>
+        <Catalog/>
          <Footer/>
       </>
     )

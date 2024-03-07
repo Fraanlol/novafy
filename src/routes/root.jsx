@@ -9,7 +9,7 @@ import Footer from '../components/footer'
 export default function Root() {
     return (
       <>
-         <Navbar location="root"/>
+         <Navbar/>
          <Hero />
          <About/>
          <Services/>

@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-       <section className="mb-20 footer">
+       <section className="mb-20 footer pt-8 border-t border-black">
             <div className="flex justify-start items-start footer">
                 <div className="mr-36px">
                     <p className="text-2xl mb-4 font-bold">Recibe las ultimas novedades</p>
