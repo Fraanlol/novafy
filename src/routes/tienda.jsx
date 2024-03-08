@@ -1,14 +1,14 @@
 import Navbar from '../components/navbar';
-import ContactSheet from '../components/sheet';
+import Shop from '../components/shop'
 import Footer from '../components/footer'
 import { ScrollRestoration } from "react-router-dom";
 
 
-export default function Contact() {
+export default function Tienda() {
     return (
       <>
          <Navbar/>
-         <ContactSheet/>
+          <Shop/>
          <Footer/>
       <ScrollRestoration />
       </>

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Hero() {
     return (
        <section className="mb-56">
@@ -13,7 +15,7 @@ export default function Hero() {
                     <p className="text-center">Aprende a posicionar y vender tus productos <br/>en las mejores plataformas de comercio</p>
                 </div>
                 <div className="m-autox w-fit">
-                    <button className="hero-cta">Start</button>
+                    <NavLink to="/contact" className="hero-cta">Start</NavLink>
                 </div>
             </div>
             <div>

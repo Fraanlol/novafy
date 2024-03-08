@@ -1,8 +1,59 @@
-export default function ContactSheet() {
+import {Form} from 'react-router-dom'
+
+export async function action() {
+    const contact = 'Contacto guardado'
+    console.log(contact);
+    document.getElementById('formulario').reset()
+    document.getElementById('success').classList.add('successMessage')
+    document.getElementById('contactButton').disabled = true
+    setTimeout(()=>{
+        document.getElementById('success').classList.remove('successMessage')
+        document.getElementById('contactButton').disabled = false
+    },4000)
+    return { contact };
+  }
+  
+  export default function ContactSheet() {
     return (
         <section>
-            <p className="text-4xl font-bold mb-8 text-center">Contáctanos</p>
-       <div className="mb-32 w-full section-sheet bg-[color:var(--color-3)] py-16">
+            <div id="success" class="bg-teal-100 border-t-4 hidden border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+                <div class="flex">
+                    <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                    <div>
+                    <p class="font-bold">Gracias por enviar tu mensaje</p>
+                    <p class="text-sm">Nos pondremos en contacto pronto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full max-w-xl m-auto">
+                <p className="text-4xl font-bold mb-8 text-center">Contáctanos</p>
+            <Form method="post" id='formulario' class="rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Name
+                    </label>
+                    <input class="required shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="name" placeholder="Your name"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="mail">
+                        Email
+                    </label>
+                    <input class="required shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="mail" type="mail" placeholder="Email Adress"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="text">
+                        Message
+                    </label>
+                    <input class=" required shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" placeholder="Enter your message"/>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button class="bg-[color:var(--color-3)] hover:bg-[color:var(--color-2)] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="contactButton" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </Form>
+            </div>
+        <div className="mb-32 w-full section-sheet bg-[color:var(--color-3)] py-16">
         <div className="m-auto flex flex-auto flex-col justify-center items-center mb-16 text-white">
             <p className="mb-4">Escríbenos para más información</p>
             <p>rodmaucompany@gmail.com</p>

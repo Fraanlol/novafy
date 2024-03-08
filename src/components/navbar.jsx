@@ -25,8 +25,9 @@ export default function Navbar() {
           <nav className="flex-1 text-md font-light ml-1 ml-12 desktop-nav">
             <ul className="flex flex-row justify-center">
               <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/#">Inicio</NavLink></li>
-              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/shop">Tienda</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/cursos">Cursos</NavLink></li>
               <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/contact">Contacto</NavLink></li>
+              <li className='mx-6 hover:shadow-buttons border-yellow-600 cursor-pointer'><NavLink to="/tienda">Tienda</NavLink></li>
             </ul>
           </nav>
           <div className="self-start flex-1 text-xl font-thin hidden mobile-nav flex justify-end">
@@ -44,8 +45,9 @@ export default function Navbar() {
           </Player>
             <ul id='bgmenu' className="flex text-3xl font-medium flex-col absolute top-0 right-0 bg-navbur bg-opacity-100 pt-32 pl-10 md:pl-20 w-full h-100 justify-start items-start">
               <li className='py-6 cursor-pointer'><NavLink to="/#">Inicio</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink to="/shop">Tienda</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink to="/cursos">Cursos</NavLink></li>
               <li className='py-6 cursor-pointer'><NavLink to="/contact">Contacto</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink to="/tienda">Tienda</NavLink></li>
             </ul>
           </div>
           <div className="contactContainer grow text-md text-center w-min flex justify-center nav-cta">

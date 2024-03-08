@@ -6,8 +6,10 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
-import Shop from "./routes/shop";
+import Cursos from "./routes/Cursos";
 import Contact from "./routes/contact";
+import {action as cargarForm} from "./components/sheet"
+import Tienda from "./routes/tienda";
 
 
 const router = createBrowserRouter([
@@ -15,11 +17,15 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
   },{
-    path: "/shop",
-    element: <Shop />,
+    path: "/cursos",
+    element: <Cursos />,
   },{
     path: "/contact",
     element: <Contact />,
+    action: cargarForm,
+  },{
+    path: "/tienda",
+    element: <Tienda />,
   },
 ]);
 

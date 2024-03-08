@@ -33,6 +33,7 @@ h1{
     color: var(--color-light);
     min-width: 100%;
     margin-top: 50px;
+    display: block;
 }
 
 .hero-cta:hover{
@@ -304,4 +305,33 @@ img{
 
 .section-shop{
   background-color: var(--color-3);
+}
+
+.successMessage{
+  display: block;
+  position: relative;
+  bottom: 4rem;
+  right: 0;
+  width: fit-content;
+  margin: auto;
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from{
+    display: block;
+    opacity: 1;
+  }70%{
+    opacity: 0;
+  }
+  to{
+    display: none;
+    opacity: 0;
+
+  }
 }
