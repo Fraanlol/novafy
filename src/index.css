@@ -9,6 +9,7 @@
   --color-light: #FFFFFF;
   --color-grey: #B8C0CC;
   --color-dark: #0D131A;
+  --border-shop: #350303;
   color: white;
   font-size: 16px;
 }
@@ -139,6 +140,64 @@ img{
   visibility: hidden;
 }
 
+.catalog-pic{
+  width: 392px;
+  height: 350px;
+}
+
+.section-shop{
+  background-color: var(--color-3);
+}
+
+.successMessage{
+  display: block;
+  position: relative;
+  bottom: 4rem;
+  right: 0;
+  width: fit-content;
+  margin: auto;
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from{
+    display: block;
+    opacity: 1;
+  }70%{
+    opacity: 0;
+  }
+  to{
+    display: none;
+    opacity: 0;
+
+  }
+}
+
+.modal-img{
+  width: 500px;
+  height: 400px;
+}
+
+#productShow{
+  margin-top: -16rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin-bottom: -7rem;
+}
+
+.chart-button{
+  background-color: var(--color-dark);
+  height: -webkit-fill-available;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 16px;
+  color: white;
+}
 
 @media only screen and (max-width:1080px){
   .left-container{
@@ -150,6 +209,10 @@ img{
   }
   .header{
     margin-bottom: 4rem;
+  }
+
+  #productShow{
+    margin-top: -7rem;
   }
 
   .right-img{
@@ -218,6 +281,20 @@ img{
   }
 }
 
+@media only screen and (max-width:640px){
+  .mobile-nav{
+    display: block;
+  }
+
+  .desktop-nav, .nav-cta{
+    display: none;
+  }
+
+  .logoContainer{
+    justify-content: flex-start;
+  }
+}
+
 @media only screen and (max-width:500px){
   h1{
     font-size: 3rem;
@@ -229,14 +306,6 @@ img{
 
   .footer-contact{
     padding-right: 8rem;
-  }
-
-  .desktop-nav, .nav-cta{
-    display: none;
-  }
-
-  .mobile-nav{
-    display: block;
   }
 }
 
@@ -296,42 +365,4 @@ img{
  .large-hide{
   display: none;
  }
-}
-
-.catalog-pic{
-  width: 392px;
-  height: 350px;
-}
-
-.section-shop{
-  background-color: var(--color-3);
-}
-
-.successMessage{
-  display: block;
-  position: relative;
-  bottom: 4rem;
-  right: 0;
-  width: fit-content;
-  margin: auto;
-  opacity: 1;
-  animation-name: fadeOut;
-  animation-timing-function: ease-in;
-  animation-duration: 4s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-  from{
-    display: block;
-    opacity: 1;
-  }70%{
-    opacity: 0;
-  }
-  to{
-    display: none;
-    opacity: 0;
-
-  }
 }
