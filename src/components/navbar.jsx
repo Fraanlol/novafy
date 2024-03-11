@@ -63,6 +63,9 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+        <div className='bg-white py-1'>
+          <p className='text-center font-light text-sm'>Sitio en construcciòn, no dude en reportar cualquier error.</p>
+        </div>
       </header>
     )
   }

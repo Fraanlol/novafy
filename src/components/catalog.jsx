@@ -2,32 +2,32 @@ export default function Catalog() {
     let data = [
         {
             'name':'Marketing avanzado',
-            'price':'$$$',
+            'price':'$299.99',
             'img':'./shop-1.jpg'
         },
         {
             'name':'Marketing principiante',
-            'price':'$$$',
+            'price':'$99.99',
             'img':'./shop-2.jpg'
         },
         {
             'name':'Tu primera tienda',
-            'price':'$$$',
+            'price':'$89.90',
             'img':'./shop-3.jpg'
         },
         {
             'name':'Consiguiendo proveedores',
-            'price':'$$$',
+            'price':'$249.99',
             'img':'./shop-4.jpg'
         },
         {
             'name':'Eligiendo los productos',
-            'price':'$$$',
+            'price':'$49.99',
             'img':'./hero-2.jpg'
         },
         {
             'name':'Herramientas de SEO',
-            'price':'$$$',
+            'price':'$149.99',
             'img':'./services-2.jpg'
         }
     ]

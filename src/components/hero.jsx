@@ -15,7 +15,7 @@ export default function Hero() {
                     <p className="text-center">Aprende a posicionar y vender tus productos <br/>en las mejores plataformas de comercio</p>
                 </div>
                 <div className="m-autox w-fit">
-                    <NavLink to="/contact" className="hero-cta">Start</NavLink>
+                    <NavLink to="/contact" className="hero-cta">Comienza</NavLink>
                 </div>
             </div>
             <div>
