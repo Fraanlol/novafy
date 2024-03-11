@@ -16,6 +16,10 @@ export default function Navbar() {
         }
       })
     }
+
+    function enableScroll(){
+      document.body.classList.toggle('no-scroll');
+    }
     return (
        <header className="block z-10 mb-52 header">
         <div className="navWrapper w-full flex flex-row justify-around items-center items-center p-5">
@@ -44,10 +48,10 @@ export default function Navbar() {
           }} src={AionData} ref={playerRef}  style={{ height: '45px', width: '45px' }} className='z-10 relative'>
           </Player>
             <ul id='bgmenu' className="flex text-3xl font-medium flex-col absolute top-0 right-0 bg-navbur bg-opacity-100 pt-32 pl-10 md:pl-20 w-full h-100 justify-start items-start">
-              <li className='py-6 cursor-pointer'><NavLink to="/#">Inicio</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink to="/cursos">Cursos</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink to="/contact">Contacto</NavLink></li>
-              <li className='py-6 cursor-pointer'><NavLink to="/tienda">Tienda</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/#">Inicio</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/cursos">Cursos</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/contact">Contacto</NavLink></li>
+              <li className='py-6 cursor-pointer'><NavLink onClick={enableScroll} to="/tienda">Tienda</NavLink></li>
             </ul>
           </div>
           <div className="contactContainer grow text-md text-center w-min flex justify-center nav-cta">
